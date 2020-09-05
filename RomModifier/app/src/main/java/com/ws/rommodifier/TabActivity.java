@@ -648,7 +648,7 @@ public class TabActivity extends Activity {
     public void on_btnOpenSource_clicked(View view){
         Intent intent = new Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.lanzous.com/b720676")
+                Uri.parse("https://github.com/Tanyiqu/AndroidRomModifier")
         );
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
@@ -659,7 +659,7 @@ public class TabActivity extends Activity {
     public void on_btnCheckUpdate_clicked(View view){
         Intent intent = new Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.lanzous.com/b720696")
+                Uri.parse("https://github.com/Tanyiqu/AndroidRomModifier")
         );
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
@@ -671,7 +671,7 @@ public class TabActivity extends Activity {
     public void on_btnGetMegaVersion_clicked(View view){
         Intent intent = new Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://www.lanzous.com/b653829")
+                Uri.parse("https://tanyiqu.lanzoui.com/b0cq6u7gd")
         );
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
@@ -688,4 +688,34 @@ public class TabActivity extends Activity {
         startActivity(intent);
         Toast.makeText(this, "请用浏览器打开\n如果链接失效请联系QQ1953649096", Toast.LENGTH_SHORT).show();
     }
+
+
+    public void on_BtnJoinQQGroup_clicked(View view){
+        boolean success = joinQQGroup("_chMBTLqiwKgLbk7ApAAG2Fkpvj8gZfK");
+        if (!success){
+            Toast.makeText(this, "呼起手Q失败！", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    /****************
+     *
+     * 发起添加群流程。群号：究极绿宝石修改器金手(232377497) 的 key 为： _chMBTLqiwKgLbk7ApAAG2Fkpvj8gZfK
+     * 调用 joinQQGroup(_chMBTLqiwKgLbk7ApAAG2Fkpvj8gZfK) 即可发起手Q客户端申请加群 究极绿宝石修改器金手(232377497)
+     *
+     * @param key 由官网生成的key
+     * @return 返回true表示呼起手Q成功，返回false表示呼起失败
+     ******************/
+    public boolean joinQQGroup(String key) {
+        Intent intent = new Intent();
+        intent.setData(Uri.parse("mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26jump_from%3Dwebapi%26k%3D" + key));
+        // 此Flag可根据具体产品需要自定义，如设置，则在加群界面按返回，返回手Q主界面，不设置，按返回会返回到呼起产品界面    //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        try {
+            startActivity(intent);
+            return true;
+        } catch (Exception e) {
+            // 未安装手Q或安装的版本不支持
+            return false;
+        }
+    }
+
 }

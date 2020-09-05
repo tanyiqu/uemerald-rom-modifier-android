@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">究极绿宝石Rom改</string>
-    <string name="version">版本 1.3.3 免激活版(2019.10.1)</string>
-    <string name="copyright">版权所有 © 2019</string>
+    <string name="version">版本 1.3.4 免激活版(2020.9.5)</string>
+    <string name="copyright">版权所有 © 2019 - forever</string>
     <string name="warning">"？？"不可以被选中</string>
     <string name="autofillHint">autofillHint</string>
     <string name="btnRequestPermission_text">申请所需的权限</string>

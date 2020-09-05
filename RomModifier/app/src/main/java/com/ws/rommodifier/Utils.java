@@ -1,10 +1,8 @@
 package com.ws.rommodifier;
 
-import android.Manifest;
+
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -291,6 +289,7 @@ public class Utils {
     public static void toastToActive(Context context){
         Toast.makeText(context, "未激活版本只能修改属性作为测试\n请检查属性是否修改成功", Toast.LENGTH_SHORT).show();
     }
+
 
 
 
