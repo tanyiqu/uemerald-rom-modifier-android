@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/btnGroups"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnChooseRom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnChooseRom_text"
+            android:onClick="on_btnChooseRom_clicked"/>
+        <Button
+            android:id="@+id/btnOpenLastRom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnOpenLastRom_text"
+            android:onClick="on_btnOpenLastRom_clicked"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblLastOpen"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnGroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorTransparentWhite"
+        android:text="@string/lblLastOpen_text"/>
+
+</RelativeLayout>

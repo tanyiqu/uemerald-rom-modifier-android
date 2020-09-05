@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fileItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/fileIcon"
+        android:layout_alignParentStart="true"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:padding="4dp"
+        android:src="@drawable/dir"/>
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_toEndOf="@id/fileIcon"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="文件名"/>
+
+    <TextView
+        android:id="@+id/fileSize"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/fileIcon"
+        android:text="0KB"
+        android:textColor="#888"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fileTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileName"
+        android:layout_toEndOf="@id/fileSize"
+        android:text="1970/1/1 00:00"
+        android:textColor="#888"
+        android:textSize="12sp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/btn"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="选择"-->
+        <!--/>-->
+
+</RelativeLayout>

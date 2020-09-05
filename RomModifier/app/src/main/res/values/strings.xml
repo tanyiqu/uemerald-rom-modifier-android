@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">究极绿宝石Rom改</string>
+    <string name="version">版本 1.3.3 免激活版(2019.10.1)</string>
+    <string name="copyright">版权所有 © 2019</string>
+    <string name="warning">"？？"不可以被选中</string>
+    <string name="autofillHint">autofillHint</string>
+    <string name="btnRequestPermission_text">申请所需的权限</string>
+    <string name="lblRequestPermission">请同意所申请的权限</string>
+    <string name="btnChooseRom_text">选择Rom</string>
+    <string name="btnOpenLastRom_text">打开上次Rom</string>
+    <string name="lblLastOpen_text">上次打开:木有</string>
+    <string name="lblEmptyFolder_text">当前文件夹为空</string>
+    <string name="lblBreedValue_text">种族值</string>
+    <string name="lblType_text">属性</string>
+    <string name="lblAbility_text">特性</string>
+    <string name="ability1">特性</string>
+    <string name="ability2">特性</string>
+    <string name="ability3">梦特</string>
+    <string name="lblEggGroup_text">蛋组</string>
+    <string name="lblOther_text">其他</string>
+    <string name="btnWritePoke_text">写入宝可梦</string>
+    <string name="btnRefreshPoke_text">不小心写错了，点击恢复</string>
+    <string name="btnPermanentMega_text">永久Mega</string>
+    <string name="btnWriteSkill_text">写入技能</string>
+    <string name="btnRefreshSkill_text">不小心写错了，点击恢复</string>
+    <string name="txtSearchPoke_hint">搜索宝可梦</string>
+    <string name="txtSearchSkill_hint">搜索技能</string>
+    <string name="hp">HP</string>
+    <string name="atk">物攻</string>
+    <string name="def">物防</string>
+    <string name="speed">速度</string>
+    <string name="spatk">特攻</string>
+    <string name="spdef">特防</string>
+    <string name="sexRate">性别比例</string>
+    <string name="incubationCycle">孵化周期</string>
+    <string name="catchRate">捕获度</string>
+    <string name="lblPowerAndRate_text">威力/命中</string>
+    <string name="lblPPAndPriority_text">PP/优先度</string>
+    <string name="lblSkillType_text">技能属性</string>
+    <string name="lblSkillStyle_text">招式类型</string>
+    <string name="power">威力</string>
+    <string name="rate">命中</string>
+    <string name="PP">PP</string>
+    <string name="priority">优先度</string>
+
+</resources>
