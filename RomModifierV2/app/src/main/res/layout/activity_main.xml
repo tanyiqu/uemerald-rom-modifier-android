@@ -7,36 +7,74 @@
     tools:context=".activity.MainActivity"
     tools:ignore="HardcodedText">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_add"
+    <LinearLayout
+        android:id="@+id/box_open_5fun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/ic_add"
-        app:backgroundTint="#FF5722"
-        app:borderWidth="0dp"
-        app:elevation="50dp"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toTopOf="@id/fab_open"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#e7d16b" />
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/box_open"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_open"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:text="打开悟饭"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_open_5fun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_open"
+            app:backgroundTint="#FF5722"
+            app:borderWidth="0dp"
+            app:elevation="50dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="#e7d16b" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/box_open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/ic_open"
-        app:backgroundTint="#31bfcf"
-        app:borderWidth="0dp"
-        app:elevation="50dp"
-        app:fabSize="normal"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#e7d16b" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:text="打开rom"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_open"
+            app:backgroundTint="#31bfcf"
+            app:borderWidth="0dp"
+            app:elevation="50dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="#e7d16b" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
