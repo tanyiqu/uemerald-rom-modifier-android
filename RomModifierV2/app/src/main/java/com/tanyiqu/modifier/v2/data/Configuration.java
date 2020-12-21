@@ -1,4 +1,4 @@
-package com.tanyiqu.modifier.v2.conf;
+package com.tanyiqu.modifier.v2.data;
 
 public class Configuration {
 

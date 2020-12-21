@@ -2,12 +2,11 @@
     <string name="app_name">究极绿宝石ROM改®</string>
 
 
-
-
     <!-- 按钮文本 -->
     <string name="btn">按钮</string>
 
-
+    <!-- 申请权限 -->
+    <string name="request_permission">为了可以访问到手机的目录，请同意接下来弹出的权限申请！</string>
 
 
 </resources>

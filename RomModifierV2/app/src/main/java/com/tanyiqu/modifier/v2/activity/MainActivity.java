@@ -8,7 +8,9 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.tanyiqu.modifier.v2.R;
+import com.tanyiqu.modifier.v2.data.Constants;
 import com.tanyiqu.modifier.v2.util.IOUtil;
+import com.tanyiqu.modifier.v2.util.PerUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, IOUtil.getSDCardPath(), Toast.LENGTH_SHORT).show();
+                PerUtil.requestPermissions(MainActivity.this, getString(R.string.request_permission), 0, Constants.perms_storage);
             }
         });
     }
