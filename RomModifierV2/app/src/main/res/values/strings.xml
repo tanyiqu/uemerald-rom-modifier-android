@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">究极绿宝石ROM改®</string>
+
+
+
+
+    <!-- 按钮文本 -->
+    <string name="btn">按钮</string>
+
+
+
+
 </resources>
