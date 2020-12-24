@@ -54,6 +54,7 @@ public class PermissionActivity extends Activity implements EasyPermissions.Perm
             case STORAGE_CALL_BACK_CODE:
                 Toast.makeText(this, "已同意存储权限", Toast.LENGTH_SHORT).show();
                 pass();
+                finish();
                 break;
         }
     }
